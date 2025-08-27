@@ -133,12 +133,12 @@ nav a:hover {
 }
 
 .banner-bg1 {
-  background-image: url('https://github.com/CR-Choring/official/releases/download/banner1.png');
+  background-image: url('../assets/banner1.png');
   opacity: 1;  /* 初始显示第一张 */
 }
 
 .banner-bg2 {
-  background-image: url('https://github.com/CR-Choring/official/releases/download/banner2.png');
+  background-image: url('../assets/banner2.png');
 }
 
 .banner-text {
@@ -218,4 +218,5 @@ section.content-section article h3 {
 /* 联系方式 */
 #contact p {
   margin-bottom: 12px;
+
 }
