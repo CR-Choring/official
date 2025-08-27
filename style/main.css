@@ -1,38 +1,37 @@
 /* 中文字体 PingFang 各权重 + 中文字符范围 */
 @font-face {
   font-family: 'PingFang';
-  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PFU.woff2') format('woff2');
+  src: url('../assets/fonts/PFU.woff2') format('woff2');
   font-weight: 100;
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
 }
 @font-face {
   font-family: 'PingFang';
-  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PFT.woff2') format('woff2');
+  src: url('../assets/fonts/PFT.woff2') format('woff2');
   font-weight: 200;
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
 }
-
 @font-face {
   font-family: 'PingFang';
-  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PFL.woff2') format('woff2');
+  src: url('../assets/fonts/PFL.woff2') format('woff2');
   font-weight: 300;
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
 }
 @font-face {
   font-family: 'PingFang';
-  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PF.woff2') format('woff2');
+  src: url('../assets/fonts/PF.woff2') format('woff2');
   font-weight: 400;
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
 }
 @font-face {
   font-family: 'PingFang';
-  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PFM.woff2') format('woff2');
+  src: url('../assets/fonts/PFM.woff2') format('woff2');
   font-weight: 500;
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
 }
 @font-face {
   font-family: 'PingFang';
-  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PFS.woff2') format('woff2');
+  src: url('../assets/fonts/PFS.woff2') format('woff2');
   font-weight: 600;
   unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
 }
@@ -40,7 +39,7 @@
 /* SFUI 可变字体，仅用于英文与符号 */
 @font-face {
   font-family: 'SFUI';
-  src: url('https://github.com/CR-Choring/official/releases/download/fonts/SFUI.woff2') format('woff2-variations');
+  src: url('../assets/fonts/SFUI.woff2') format('woff2-variations');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -48,7 +47,7 @@
 }
 @font-face {
   font-family: 'FZDYS';
-  src: url('https://github.com/CR-Choring/official/releases/download/fonts/FZDYS.woff2') format('woff2');
+  src: url('../assets/fonts/FZDYS.woff2') format('woff2');
   font-weight: 800;
   unicode-range: U+4E00-9FFF;
 }
@@ -218,5 +217,4 @@ section.content-section article h3 {
 /* 联系方式 */
 #contact p {
   margin-bottom: 12px;
-
 }
