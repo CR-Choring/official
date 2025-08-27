@@ -1,0 +1,221 @@
+/* 中文字体 PingFang 各权重 + 中文字符范围 */
+@font-face {
+  font-family: 'PingFang';
+  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PFU.woff2') format('woff2');
+  font-weight: 100;
+  unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
+}
+@font-face {
+  font-family: 'PingFang';
+  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PFT.woff2') format('woff2');
+  font-weight: 200;
+  unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: 'PingFang';
+  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PFL.woff2') format('woff2');
+  font-weight: 300;
+  unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
+}
+@font-face {
+  font-family: 'PingFang';
+  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PF.woff2') format('woff2');
+  font-weight: 400;
+  unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
+}
+@font-face {
+  font-family: 'PingFang';
+  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PFM.woff2') format('woff2');
+  font-weight: 500;
+  unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
+}
+@font-face {
+  font-family: 'PingFang';
+  src: url('https://github.com/CR-Choring/official/releases/download/fonts/PFS.woff2') format('woff2');
+  font-weight: 600;
+  unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
+}
+
+/* SFUI 可变字体，仅用于英文与符号 */
+@font-face {
+  font-family: 'SFUI';
+  src: url('https://github.com/CR-Choring/official/releases/download/fonts/SFUI.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007E, U+00A0-00FF;
+}
+@font-face {
+  font-family: 'FZDYS';
+  src: url('https://github.com/CR-Choring/official/releases/download/fonts/FZDYS.woff2') format('woff2');
+  font-weight: 800;
+  unicode-range: U+4E00-9FFF;
+}
+
+/* 手动 SFUI 样式类，可选用 */
+    .sfui { font-family: 'SFUI', sans-serif !important; font-weight: 400; }
+    .sfui-ultralight { font-variation-settings: 'wght' 100; }
+    .sfui-thin { font-variation-settings: 'wght' 200; }
+    .sfui-light { font-variation-settings: 'wght' 300; }
+    .sfui-regular { font-variation-settings: 'wght' 400; }
+    .sfui-medium { font-variation-settings: 'wght' 500; }
+    .sfui-semibold { font-variation-settings: 'wght' 600; }
+    .sfui-bold { font-variation-settings: 'wght' 700; }
+    .sfui-heavy { font-variation-settings: 'wght' 800; }
+    .sfui-black { font-variation-settings: 'wght' 900; }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PingFang' 'SFUI';
+}
+
+body {
+  margin: 0;
+  font-family: "PingFang", 'SFUI';
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #0077ff;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 0;
+}
+
+.banner-bg1 {
+  background-image: url('https://github.com/CR-Choring/official/releases/download/banner1.png');
+  opacity: 1;  /* 初始显示第一张 */
+}
+
+.banner-bg2 {
+  background-image: url('https://github.com/CR-Choring/official/releases/download/banner2.png');
+}
+
+.banner-text {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+
+
+.banner-text h2 {
+  font-size: 2em;
+  font-family: 'FZDYS';
+  margin-bottom: 10px;
+}
+
+.intro {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #024ea5;
+  color: #ccc;
+  text-align: center;
+  padding: 16px;
+}
+
+footer {
+  background-color: #006eff;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: 'SFUI' , 'PingFang';
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* 内容区通用样式 */
+main {
+  max-width: 960px;
+  margin: 60px auto 80px auto;
+  padding: 0 20px;
+}
+section.content-section {
+  margin-bottom: 80px;
+}
+section.content-section h2 {
+  margin-bottom: 24px;
+  border-bottom: 3px solid #007acc;
+  padding-bottom: 8px;
+  font-size: 1.8rem;
+}
+section.content-section p,
+section.content-section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+section.content-section ul {
+  padding-left: 20px;
+}
+section.content-section ul li {
+  margin-bottom: 10px;
+}
+section.content-section article {
+  margin-bottom: 24px;
+}
+section.content-section article h3 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* 联系方式 */
+#contact p {
+  margin-bottom: 12px;
+}
